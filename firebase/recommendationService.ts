@@ -1,5 +1,5 @@
 const API =
-  "http://192.168.1.2:5000/recommendation";
+  "https://focusforge-backend-kfuh.onrender.com/recommendation";
 
 export async function getRecommendation(
   uid: string

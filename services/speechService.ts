@@ -6,7 +6,7 @@ import {
 } from "expo-audio";
 
 
-const API_URL = "http://192.168.1.2:5000";
+const API_URL = "https://focusforge-backend-kfuh.onrender.com";
 
 export function useSpeechService() {
   const recorder = useAudioRecorder(

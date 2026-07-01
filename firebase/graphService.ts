@@ -1,4 +1,4 @@
-const API = "http://192.168.1.2:5000/graph/save-task";
+const API = "https://focusforge-backend-kfuh.onrender.com/graph/save-task";
 
 export async function saveGraphTask(
   uid: string,

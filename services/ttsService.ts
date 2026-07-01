@@ -2,7 +2,7 @@ import * as FileSystem from "expo-file-system/legacy";
 import { Audio } from "expo-av";
 
 const API =
-  "http://192.168.1.2:5000/text-to-speech";
+  "https://focusforge-backend-kfuh.onrender.com/text-to-speech";
 
 export async function speak(
   text: string
