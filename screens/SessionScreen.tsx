@@ -198,6 +198,10 @@ useEffect(() => {
     const isLeavingForeground = appState.current === "active" && (nextState === "background" || nextState === "inactive" || nextState === "unknown");
 
     if (isLeavingForeground && !paused && completedMilestones < milestones && !sessionFailed) {
+      if (route.params.mode === "Forge Master") {
+        await failSession();
+        return;
+      } 
       const maxWarnings = getMaxWarnings();
 
       setWarnings((prev) => {
