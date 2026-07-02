@@ -205,18 +205,13 @@ useEffect(() => {
       const maxWarnings = getMaxWarnings();
 
       setWarnings((prev) => {
-        if (prev >= maxWarnings) {
-          Alert.alert("Session Failed", "You left the session too many times.", [
-            {
-              text: "OK",
-              onPress: async () => {
-                await failSession();
-              },
-            },
-          ]);
-          return prev;
-        }
+       if (prev >= maxWarnings) {
+        setTimeout(() => {
+        failSession();
+      }, 0);
 
+  return prev;
+}
         const nextWarnings = prev + 1;
         const message = `Warning ${nextWarnings} of ${maxWarnings}`;
         setWarningBanner(message);
