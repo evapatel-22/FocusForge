@@ -44,9 +44,6 @@ export default function ProfileScreen() {
   const [notificationsEnabled, setNotificationsEnabled] = useState(true);
   const [isEditingName, setIsEditingName] = useState(false);
   const [nameInput, setNameInput] = useState("");
-  const [isEditingEmail, setIsEditingEmail] = useState(false);
-  const [newEmail, setNewEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [isSaving, setIsSaving] = useState(false);
 
   const refreshStats = async () => {
@@ -64,7 +61,6 @@ export default function ProfileScreen() {
     const firestoreEmail = firestoreDoc.exists() ? firestoreDoc.data().email || user.email || "" : user.email || "";
 
     setEmail(firestoreEmail);
-    setNewEmail(firestoreEmail);
     setName(firestoreName || user.displayName || "");
     setNameInput(firestoreName || user.displayName || "");
   };
@@ -104,43 +100,6 @@ export default function ProfileScreen() {
       Alert.alert("Profile updated", "Your name has been updated.");
     } catch (error: any) {
       Alert.alert("Update failed", error.message || "Unable to update your name right now.");
-    } finally {
-      setIsSaving(false);
-    }
-  };
-
-  const handleEmailSave = async () => {
-    const trimmedEmail = newEmail.trim();
-    const user = auth.currentUser;
-
-    if (!user) {
-      Alert.alert("Sign in required", "Please sign in again to update your email.");
-      return;
-    }
-
-    if (!trimmedEmail) {
-      Alert.alert("Email required", "Please enter a new email address.");
-      return;
-    }
-
-    if (!password.trim()) {
-      Alert.alert("Password required", "Please enter your password to change your email.");
-      return;
-    }
-
-    try {
-      setIsSaving(true);
-      const credential = EmailAuthProvider.credential(user.email || "", password);
-      await reauthenticateWithCredential(user, credential);
-      await updateEmail(user, trimmedEmail);
-      await setDoc(doc(db, "users", user.uid), { email: trimmedEmail }, { merge: true });
-      setEmail(trimmedEmail);
-      setNewEmail(trimmedEmail);
-      setPassword("");
-      setIsEditingEmail(false);
-      Alert.alert("Profile updated", "Your email has been updated.");
-    } catch (error: any) {
-      Alert.alert("Update failed", error.message || "Unable to update your email right now.");
     } finally {
       setIsSaving(false);
     }
@@ -241,46 +200,8 @@ export default function ProfileScreen() {
       </View>
 
       <View style={[styles.card, { backgroundColor: theme.card }]}> 
-        <View style={styles.rowBetween}>
-          <Text style={[styles.cardTitle, { color: theme.secondaryText }]}>Email</Text>
-          {!isEditingEmail && (
-            <TouchableOpacity onPress={() => { setIsEditingEmail(true); setNewEmail(email); }}>
-              <Text style={[styles.editLink, { color: theme.accent }]}>Edit</Text>
-            </TouchableOpacity>
-          )}
-        </View>
-
-        {isEditingEmail ? (
-          <>
-            <TextInput
-              value={newEmail}
-              onChangeText={setNewEmail}
-              placeholder="New email"
-              placeholderTextColor={theme.secondaryText}
-              keyboardType="email-address"
-              autoCapitalize="none"
-              style={[styles.input, { color: theme.text, borderColor: theme.secondaryText }]}
-            />
-            <TextInput
-              value={password}
-              onChangeText={setPassword}
-              placeholder="Current password"
-              placeholderTextColor={theme.secondaryText}
-              secureTextEntry
-              style={[styles.input, { color: theme.text, borderColor: theme.secondaryText }]}
-            />
-            <View style={styles.buttonRow}>
-              <TouchableOpacity style={[styles.actionButton, { backgroundColor: theme.accent }]} onPress={handleEmailSave} disabled={isSaving}>
-                <Text style={styles.actionButtonText}>{isSaving ? "Saving..." : "Save"}</Text>
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.secondaryButton} onPress={() => { setIsEditingEmail(false); setNewEmail(email); setPassword(""); }}>
-                <Text style={[styles.secondaryButtonText, { color: theme.text }]}>Cancel</Text>
-              </TouchableOpacity>
-            </View>
-          </>
-        ) : (
-          <Text style={[styles.cardValue, { color: theme.text, fontSize: 16, fontWeight: "600", marginTop: 8 }]}>{email || "Not signed in"}</Text>
-        )}
+        <Text style={[styles.cardTitle, { color: theme.secondaryText }]}>Email</Text>
+        <Text style={[styles.cardValue, { color: theme.text, fontSize: 16, fontWeight: "600", marginTop: 8 }]}>{email || "Not signed in"}</Text>
       </View>
 
       <View style={[styles.card, { backgroundColor: theme.card }]}> 
