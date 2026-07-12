@@ -44,7 +44,7 @@ FocusForge combines Artificial Intelligence, gamification, and adaptive focus mo
 
 ## Team Name
 
-**FocusForge**
+**Cognitive Coders**
 
 ## Team Members
 
@@ -145,6 +145,11 @@ Sarvam AI powers both Speech-to-Text and Text-to-Speech features within FocusFor
 ## 🤖 AI Image Verification
 
 Uses **Google Gemini AI** to verify whether submitted work genuinely matches the selected task before rewarding users.
+<p align="center">
+    <img width="200" height="400" alt="a3c5c1ac-23d1-40f3-87cd-7d831335ba30" src="https://github.com/user-attachments/assets/a59eba5f-e15a-45cf-9e3f-4ce680263aea" />
+  <img width="200" height=400" alt="14b0bd12-024d-456a-b15c-236bd7e3d209" src="https://github.com/user-attachments/assets/474e639f-1a9e-489e-a866-c8301da826e5" />
+<img width="200" height="400" alt="99916c7a-c25b-47e9-95b8-88abd678938c" src="https://github.com/user-attachments/assets/3d6fd58d-5d79-434d-a406-0c95700919bf" />
+</p>
 
 ---
 
@@ -157,6 +162,11 @@ Three focus modes:
 - Forge Master
 
 Forge Master immediately ends the session when distractions are detected.
+<p align="center">
+  <img width="200" height="400" alt="c111e11e-b451-4331-b6f1-0183127ed6d9" src="https://github.com/user-attachments/assets/6d181ba7-8cd8-473c-ad6c-00f941964c0d" />
+<img width="200" height="400" alt="309de68f-8ee9-4f7a-9466-66785ea4d971" src="https://github.com/user-attachments/assets/348e8b8e-c2e2-4dba-b90b-ad3715fe6d94" />
+
+</p>
 
 ---
 
@@ -168,6 +178,10 @@ Supports both:
 - Text-to-Speech
 
 using **Sarvam AI**.
+<p align="center">
+   <img width="200" height="400" alt="43158c8c-7aba-4e11-815d-9e16187f07f5" src="https://github.com/user-attachments/assets/2e4d0fe9-2887-4ca1-aa3e-27f21954fe79" />
+
+</p>
 
 ---
 
@@ -182,6 +196,12 @@ Tracks
 - Productivity Trends
 
 ---
+<p align="center">
+  <img width="200" height="400" alt="97bd1584-02d1-40e9-86ea-f9ac2d330710" src="https://github.com/user-attachments/assets/1c0aab0a-fa0f-44ec-badf-4c2630959a2f" />
+
+  <img width="200" height="400" alt="e66c4906-d914-4eec-843a-86cd6d74f325" src="https://github.com/user-attachments/assets/a6d38a66-3f95-4123-8d37-62c6f9b35fb5" />
+
+</p>
 
 ## 🏆 Gamification
 
@@ -189,16 +209,21 @@ Tracks
 - Rewards System
 - Forge Log
 - Streak Tracking
+<p align="center">
+   <img width="200" height="400" alt="b670f991-4792-4b52-9c7e-47fc2ea9f2ec" src="https://github.com/user-attachments/assets/49a6c409-a9b6-4c52-aa3c-34cfb85e2f00" />
+<img width="200" height="400" alt="f91112cf-82f4-40cd-acc0-bb756be52384" src="https://github.com/user-attachments/assets/6984bae4-4315-4767-a7d7-99a5ebe4f5aa" />
+<img width="200" height="400" alt="cc9786c4-ec04-4718-a1d2-034ba9adb03e" src="https://github.com/user-attachments/assets/7d9d3a45-4173-412f-a325-80c53680633e" />
+</p>
 
 ---
 
 ## 🧠 AI Coach
 
 Uses **Neo4j AuraDB** to generate personalized task recommendations based on previous work completed.
+<p align="center">
+    <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/eb96d573-9fa5-4b51-a6dc-2892be971a6a" />
 
----
-
-(Add screenshots or GIFs here)
+</p>
 
 ---
 
