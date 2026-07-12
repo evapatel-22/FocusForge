@@ -16,8 +16,6 @@ Traditional productivity applications primarily measure **time spent** rather th
 ### Themes Selected
 
 - ✅ Human Experience & Productivity
-- ✅ Learning & Knowledge Systems
-- ✅ Media, Social & Interactive Platforms
 
 ---
 
