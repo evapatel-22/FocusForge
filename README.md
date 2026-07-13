@@ -53,8 +53,8 @@ FocusForge combines Artificial Intelligence, gamification, and adaptive focus mo
 
 **Swara Patel**
 - Role: Full Stack Developer & Testing 
-- GitHub: *Add GitHub*
-- LinkedIn: *Add LinkedIn*
+- GitHub: https://github.com/swara2404  
+- LinkedIn: https://www.linkedin.com/in/swara-patel-272a5a358/
 
 ---
 
@@ -229,28 +229,34 @@ Uses **Neo4j AuraDB** to generate personalized task recommendations based on pre
 
 ### 🎥 Demo Video
 
-**(Paste YouTube Link)**
+https://youtu.be/ljz9DYYJ74c?si=MA5ADQIBA1dOoUVl
+
 
 ### 🌐 Deployment
 
 **Backend (Render):**
-https://your-render-url.onrender.com
+https://focusforge-backend-kfuh.onrender.com
 
 ### 📱 APK
 
-**(Paste APK Download Link)**
+https://github.com/evapatel-22/FocusForge/releases/download/v1.0/FocusForge.apk
 
 ### 📑 Pitch Deck
 
-**(Paste Google Slides / Canva Link)**
+https://github.com/evapatel-22/FocusForge/releases/download/v1.0/FocusForge_Presentation.pdf
 
 ---
 
 # ✅ Tasks & Bonus Checklist
 
-- [ ] All team members completed mandatory social task
-- [ ] Badge Sharing
-- [ ] Blog / Article
+- [x] All team members completed mandatory social task
+
+- [x] Badge Sharing
+  - Eva Patel: https://www.linkedin.com/posts/eva-patel-749125323_hackhazards26-hackathon-innovation-activity-7469278032269086720-rXfg?utm_source=share&utm_medium=member_ios&rcm=ACoAAFG1w-kBCTj8tqCiKvndv-wzD6Ro27bZb6I 
+  - Swara Patel: https://www.linkedin.com/posts/swara-patel-272a5a358_hackhazards-hackhazards-hackathon-share-7469289115679621120-tHFy/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFklEfYBUdgiwGcQ7EjOs9QywgTGMVKj75Q
+
+- [x] Blog / Article
+  - Medium: https://medium.com/@swarapatel2404/building-focusforge-how-we-built-an-un-cheatable-app-to-fix-our-broken-study-habits-036bd70ac6a3
 
 ---
 
